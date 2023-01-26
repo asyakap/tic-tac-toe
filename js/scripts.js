@@ -183,6 +183,7 @@ function handleBottomMiddleClick() {
   }
 
 function reset() {
+  location.reload();
   //this function resets the game
 }
   
