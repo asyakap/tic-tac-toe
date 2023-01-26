@@ -22,6 +22,7 @@ _This application creates a game of tic-tac-toe for two people. It follows the c
 * _Navigate to the top directory._
 * _Open index.html in your preferred web browser._
 * _Interact with the webpage._
+* _Link to the project - https://asyakap.github.io/tic-tac-toe/_
 
 
 ## Known Bugs
