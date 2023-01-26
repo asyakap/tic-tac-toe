@@ -1,0 +1,88 @@
+h1, body{
+  text-align: center;
+}
+.cell {
+  height: 215px;
+  text-align: center;
+}
+
+#top-left {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#top-middle {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#top-right {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#middle-left {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#middle-middle {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#middle-right {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#bottom-left {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#bottom-middle {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+#bottom-right {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.character {
+  font-size: 100px;
+  font-weight: bold;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+#score {
+  text-align: center;
+}
+#top-middle {
+  border-right: solid black 5px;
+  border-left: solid black 5px;
+}
+#middle-left {
+  border-top: solid black 5px;
+  border-bottom: solid black 5px;
+}
+#middle-middle {
+  border: solid black 5px;
+}
+#middle-right {
+  border-top: solid black 5px;
+  border-bottom: solid black 5px;
+}
+#bottom-middle {
+  border-right: solid black 5px;
+  border-left: solid black 5px;
+}
+#displayWinner {
+  font-size: 100px;
+}
