@@ -49,6 +49,7 @@ Board.prototype.checkWin = function() {
   else if (board.row1[2] === board.row2[1] && board.row1[2] === board.row3[0]) {
     document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
   }
+}
 
 
 //User Interface Logic
