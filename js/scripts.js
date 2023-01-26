@@ -24,30 +24,37 @@ function Board(playerXO) {
 }
 
 Board.prototype.checkWin = function() {
-  console.log(board.currentPlayer.playerXO);
   if (board.row1[0] === board.row1[1] && board.row1[0] === board.row1[2]) {
     document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+  startGame();
   }
   else if (board.row2[0] === board.row2[1] && board.row2[1] === board.row2[2]) {
     document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+    startGame();
   }
   else if (board.row3[0] === board.row3[1] && board.row3[1] === board.row3[2]) {
   document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+  startGame();
   }
   else if (board.row1[0] === board.row2[0] && board.row1[0] === board.row3[0]) {
   document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+  startGame();
   }
   else if (board.row1[1] === board.row2[1] && board.row1[1] === board.row3[1]) {
     document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+    startGame();
   }
   else if (board.row1[2] === board.row2[2] && board.row1[2] === board.row3[2]) {
     document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+    startGame();
   }
   else if (board.row1[0] === board.row2[1] && board.row1[0] === board.row3[2]) {
     document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+    startGame();
   }
   else if (board.row1[2] === board.row2[1] && board.row1[2] === board.row3[0]) {
     document.getElementById("displayWinner").innerText = board.currentPlayer.playerXO + " wins!"
+    startGame();
   }
 }
 
@@ -174,6 +181,10 @@ function handleBottomMiddleClick() {
     board.checkWin();
     player.switchPlayer();
   }
+
+function reset() {
+  //this function resets the game
+}
   
 window.addEventListener("load", function () {
   document.getElementById("submit").addEventListener("click", startGame);
@@ -186,5 +197,6 @@ window.addEventListener("load", function () {
   document.getElementById("bottom-left").addEventListener("click", handleBottomLeftClick);
   document.getElementById("bottom-middle").addEventListener("click", handleBottomMiddleClick);
   document.getElementById("bottom-right").addEventListener("click", handleBottomRightClick);
+  document.getElementById("reset").addEventListener("click", reset)
   
 })
